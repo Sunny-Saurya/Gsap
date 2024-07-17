@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .page1 {
+            background-color: #231c6b;
+            height: 100vh;
+            width: 100vw;
+
+        }
+
+        .page2 {
+            /* background-color: #4138ab; */
+            height: 100vh;
+            width: 100vw;
+
+        }
+
+        .page3 {
+            background-color: #234279;
+            height: 100vh;
+            width: 100vw;
+
+        }
+
+        .page4 {
+            background-color: #323238;
+            height: 100vh;
+            width: 100vw;
+
+        }
+
+        .page2 h1 {
+            font-size: 30rem;
+            color: #000000;
+            /* background-color: black; */
+            padding: 20px;
+            font-weight: 600;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page1"></div>
+    <div class="page2">
+        <h1>Experience</h1>
+    </div>
+    <div class="page3"></div>
+    <div class="page4"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        // gsap.to(".page2 h1",{
+        //     transform: "translateX(-150%)",
+        //     duration:2,
+        //     delay:2,
+        //     scrollTrigger:{
+        //         trigger: "page2",
+        //         scroller: "body",
+        //         markers :true,
+        //         start:"top 0%",
+        //         end:"top -100%",
+        //         scrub: 2,
+        //         pin:true
+        //     }
+        // })
+
+        gsap.to(".page2 h1", {
+            transform: "translateX(-150%)",
+            duration: 2,
+            // delay:1,
+            scrollTrigger: {
+                trigger: ".page2",
+                scroller: "body",
+                markers: true,
+                start: "top 0%",
+                end: "top -100%",
+                scrub: 2,
+                pin: true
+            }
+        })
+    </script>
+</body>
+
+</html>

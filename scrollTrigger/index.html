@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,
+        body{
+            height: 100%;
+            width: 100%;
+        }
+
+        #page1{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(76, 147, 201);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #page2{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(7, 45, 73);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+        }
+        #page3{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(72, 32, 233);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(61, 186, 11);
+        }
+
+        h1{
+            font-size: 80px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            color: rgb(234, 14, 14);
+        }
+        p{
+            font-size: 30px;
+            color: rgb(1, 149, 255);
+            line-height: 40px;
+            margin-bottom: 30px;
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="page1">
+        <div id="box"></div>
+    </div>
+    <div id="page2">
+        <!-- <h1>Hello World</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis illum tenetur, fugit distinctio corporis porro aliquam placeat. Tempore atque assumenda laudantium inventore id alias corrupti, impedit ut distinctio itaque dolor perspiciatis error magni ex provident nulla! Fuga voluptates rerum vitae. Blanditiis corporis molestias odit ducimus accusantium numquam aspernatur nulla aperiam!</p> -->
+
+        <div id="box"></div> 
+        
+    </div>
+    <div id="page3">
+        <div id="box"></div>
+    </div>
+    
+    <!-- cdn of gsap -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- cdn of scroll trigger -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
