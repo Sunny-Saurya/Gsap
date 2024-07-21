@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/258149/pexels-photo-258149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 50px;
+    color: #fff;
+}
+
+#nav h2{
+    font-size: 30px;
+}
+
+#nav li{
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#full{
+    height: 100%;
+    width: 30%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: -30%;
+    backdrop-filter: blur(10px);
+    padding: 40px 50px;
+}
+
+#full h4{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+#nav i{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#full i{
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+
+}
